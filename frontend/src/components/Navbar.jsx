@@ -8,7 +8,7 @@ const Navbar = ({ user }) => {
     <div className="navbar">
       <span className="logo">
         <Link className="link" to="/">
-          Lama App
+          Mohamed Elyes Ben khoud @Copyrights
         </Link>
       </span>
       {user ? (
@@ -23,7 +23,7 @@ const Navbar = ({ user }) => {
         </ul>
       ) : (
         <Link className="link" to="login">
-          Login
+          LogIn
         </Link>
       )}
     </div>
