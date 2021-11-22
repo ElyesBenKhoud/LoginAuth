@@ -1,6 +1,6 @@
 .navbar {
   height: 50px;
-  background-color: rgba(0, 0, 0, 0.698);
+  background-color: rgba(224, 75, 75, 0.698);
   color: white;
   display: flex;
   align-items: center;
@@ -63,7 +63,7 @@
 .cardButton {
   border: none;
   border-radius: 10px;
-  background-color: rgba(53, 16, 102, 0.678);
+  background-color: rgba(224, 75, 75, 0.698);
   padding: 10px;
   color: white;
   font-weight: bold;
