@@ -3,13 +3,15 @@ const GithubStrategy = require("passport-github2").Strategy;
 const FacebookStrategy = require("passport-facebook").Strategy;
 const passport = require("passport");
 
+//get the id client of google
 const GOOGLE_CLIENT_ID =
   "215341427022-qpsrq4730unqiq2v0e0eci2valevqr1b.apps.googleusercontent.com";
 const GOOGLE_CLIENT_SECRET = "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";
-
+//get the id client of github
 GITHUB_CLIENT_ID = "35a7122708e7232b92d9";
 GITHUB_CLIENT_SECRET = "c61f405ea425386f6ddac5e710cc7a9d0221fdc5";
 
+// didn't access the facebook one for security problem
 FACEBOOK_APP_ID = "your id";
 FACEBOOK_APP_SECRET = "your id";
 

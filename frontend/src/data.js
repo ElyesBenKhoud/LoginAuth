@@ -3,7 +3,7 @@ export const posts = [
     id: 1,
     title: "5 Premium Theme for React",
     img: "https://images.pexels.com/photos/7963572/pexels-photo-7963572.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-    desc: "description feature",
+    desc: "Description feature",
     longDesc: "test",
   },
   {
