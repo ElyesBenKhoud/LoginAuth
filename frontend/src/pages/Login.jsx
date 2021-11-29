@@ -35,7 +35,7 @@ const Login = () => {
         </div>
         <div className="center">
           <div className="line" />
-          <div className="or">OR</div>
+          <div className="or">or</div>
         </div>
         <div className="right">
           <input type="text" placeholder="Username" />
