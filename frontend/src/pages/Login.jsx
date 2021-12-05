@@ -1,8 +1,12 @@
 import Google from "../img/google.png";
 import Facebook from "../img/facebook.png";
 import Github from "../img/github.png";
+import axios from "axios";
+import { useForm } from "react-hook-form";
 
 const Login = () => {
+  const { register, handleSubmit } = useForm();
+
   const google = () => {
     window.open("http://localhost:5000/auth/google", "_self");
   };
@@ -13,6 +17,17 @@ const Login = () => {
 
   const facebook = () => {
     window.open("http://localhost:5000/auth/facebook", "_self");
+  };
+  const onSubmit = (data) => {
+    axios
+      .post("http://localhost:5000/auth/log", data)
+      .then((res) => {
+        console.log(res.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+    // navigate("/LandingPage");
   };
 
   return (
@@ -38,9 +53,11 @@ const Login = () => {
           <div className="or">or</div>
         </div>
         <div className="right">
-          <input type="text" placeholder="Username" />
-          <input type="text" placeholder="Password" />
-          <button className="submit">Login</button>
+          <input type="text" placeholder="Username" {...register("username")} />
+          <input type="text" placeholder="Password" {...register("password")} />
+          <button className="submit" onClick={handleSubmit(onSubmit)}>
+            Login
+          </button>
         </div>
       </div>
     </div>

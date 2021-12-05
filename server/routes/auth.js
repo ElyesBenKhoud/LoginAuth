@@ -60,4 +60,12 @@ router.get(
   })
 );
 
+router.get(
+  "/log",
+  passport.authenticate("log", {
+    successRedirect: CLIENT_URL,
+    failureRedirect: "/login/failed",
+  })
+);
+
 module.exports = router;
